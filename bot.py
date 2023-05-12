@@ -187,8 +187,7 @@ def get_coulombs_constant():
     return
 
 def distance():
-    print_response("""Ось формула для обчислення: dist = math.sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2 + (z2 - z1) ^ 2.\n
-    Введіть координати першої точки у форматі x1,y1,z1 без ком: """)
+    print_response("""Ось формула для обчислення: dist = math.sqrt((x2 - x1) ^ 2 + (y2 - y1) ^ 2 + (z2 - z1) ^ 2.\nВведіть координати першої точки у форматі x1,y1,z1 без ком: """)
     x1, y1, z1 = int(get_user_input())
     print_response("""Введіть координати другої точки у форматі x2,y2,z2 без ком: """)
     x2, y2, z2 = int(get_user_input())
@@ -207,8 +206,7 @@ def arc_length():
     return
 
 def segment_length():
-    print_response("""Ось формула для обчислення: distance = sqrt((x2 - x1)^2 + (y2 - y1)^2).\n
-    Введіть координати першого вектора у форматі x1,y1 без ком: """)
+    print_response("""Ось формула для обчислення: distance = sqrt((x2 - x1)^2 + (y2 - y1)^2).\nВведіть координати першого вектора у форматі x1,y1 без ком: """)
     x1, y1 = int(get_user_input())
     print_response("""Введіть координати другого вектора у форматі x2,y2 без ком: """)
     x2, y2 = int(get_user_input())
@@ -217,8 +215,7 @@ def segment_length():
     return
 
 def circle_area():
-    print_response("""Ось формула для обчислення: S = pi * r ^ 2).\n
-    Введіть радіус кола: """)
+    print_response("""Ось формула для обчислення: S = pi * r ^ 2. Введіть радіус кола: """)
     r = int(get_user_input())
     pi = float(3.14)
     S = float(pi * r ** 2)
@@ -449,7 +446,7 @@ menu = [{
             ]
         },
         {
-            "access": "фіз, 3",
+            "access": "фіз",
             "description": "Фізика",
             "helpText": "Тут можна вирішувати завдання з фізики",
             "windows": [
